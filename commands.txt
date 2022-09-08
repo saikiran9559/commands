@@ -1,0 +1,46 @@
+
+#############      npm commands       ##################
+
+npm config set proxy http://b171954:3KTY8P@hostelinternet.rgukt.ac.in:3128
+npm config set https-proxy http://b171954:3KTY8P@hostelinternet.rgukt.ac.in:3128
+
+npm config set proxy http://tempuser1:rgukt123@staffnet.rgukt.ac.in:3128
+npm config set https-proxy http://tempuser1:rgukt123@staffnet.rgukt.ac.in:3128
+
+pip --proxy http://b171954:3KTY8P@hostelinternet.rgukt.ac.in:3128 install -r requirements.txt
+pip --proxy http://tempuser1:rgukt123@staffnet.rgukt.ac.in:3128 install -r requirements.txt
+export HTTP_PROXY http://b171954:3KTY8P@hostelinternet.rgukt.ac.in:3128 install -r requirements.txt
+
+npm config rm proxy
+npm config rm https-proxy
+
+npm config list
+
+
+#############      git commands       ##################
+
+git config --global http.proxy http://B171954:3KTY8P@hostelinternet.rgukt.ac.in:3128
+git config --global https.proxy http://B171954:3KTY8P@hostelinternet.rgukt.ac.in:3128
+
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+git config --global --unset core.gitproxy
+
+git config --list
+
+git checkout -b feature/auth // for creating and switching branch
+git checkout branchname // for switching branch
+
+ping www.google.com
+
+#############      pip commands       ##################
+same directory {
+	python -m venv env
+	pip --proxy http://b171954:3KTY8P@hostelinternet.rgukt.ac.in:3128 install -r requirements.txt
+	pip --proxy http://tempuser1:rgukt123@staffnet.rgukt.ac.in:3128 install -r requirements.txt
+	django-admin startproject project .
+	python manage.py startapp api_basic
+}
+
+tempuser1
+rgukt123
